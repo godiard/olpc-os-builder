@@ -94,6 +94,9 @@ done
 # enable certain systemd units
 systemctl enable ds-backup.timer
 
+# this is needed in South Australia
+systemctl enable cntlm.service
+
 #prefdm tweaks
 #sed -i -e 's/respawn limit 10/respawn limit 3/' /etc/init/prefdm.conf
 
