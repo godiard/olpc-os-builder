@@ -96,6 +96,7 @@ systemctl enable ds-backup.timer
 
 # this is needed in South Australia
 systemctl enable cntlm.service
+systemctl enable harvest-monitor.service
 
 #prefdm tweaks
 #sed -i -e 's/respawn limit 10/respawn limit 3/' /etc/init/prefdm.conf
